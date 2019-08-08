@@ -1,0 +1,186 @@
+
+html{
+background-color: #DCDCDC;
+
+}
+
+
+
+.fonts{
+font-family: 'Lacquer', sans-serif;
+font-size: 25px;
+margin-top: -250px;
+margin-left: 10px;
+color: red;
+font-weight: bolder;
+}
+
+.fonts:hover{
+animation: shake 2.5s linear infinite;
+	animation-direction: reverse;
+
+}
+
+.little{
+
+width: 300px;
+font-family: 'Lacquer', sans-serif;
+font-size: 20px;
+margin-top: 50px;
+margin-left: 30px;
+display: inline-block;
+	transition-property: width,opacity, transform; 
+	transition-duration: 1s;
+
+}
+
+
+.little:hover{
+	
+
+	opacity: 0;
+	transform: rotate(360deg);
+	
+}
+
+.magz-div{
+	width: 700px;
+	height: 800px ;
+	background-color: 	#A9A9A9; 
+	margin-top: 50px;
+	margin-left: 500px;
+	box-shadow: 0px 0px 5px 5px;
+	overflow: hidden;
+}
+
+.dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7{
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+	display: block;
+	
+	transition-property: transform;
+	transition-timing-function: ease-in-out;
+}
+.dot1 {
+	margin-left: 100px;
+	background-color: #708090;
+	opacity: 0.6;
+animation: balltravel 1s ease-in-out infinite alternate-reverse;
+
+}
+.dot2 {
+	margin-left: 350px;
+	margin-top: -250px;
+	opacity: 1;
+	background-color: #2F4F4F;
+	animation: balltravel 0.8s ease-in-out infinite alternate-reverse;
+	mix-blend-mode: overlay;
+}
+.dot3 {
+	margin-left: 350px;
+	background-color: #708090;
+	opacity: 1;
+
+	animation: ball 1s ease-in-out infinite alternate-reverse;
+	
+}
+.dot4 {
+	margin-left: 350px;
+
+		background-color: #2F4F4F;
+		opacity: 1;
+
+	animation: ball 2s ease-in-out infinite alternate-reverse;
+	mix-blend-mode: overlay;
+	
+}
+.dot5 {
+	margin-left: 350px;
+		background-color: #2F4F4F;
+		opacity: 1;
+
+	animation: balltravel 1s ease-in-out infinite alternate-reverse;
+	mix-blend-mode: overlay;
+}
+.dot6 {
+	margin-left: 350px;
+		background-color: #708090;
+
+	margin-top: -200px;
+	animation: balltravel 3s ease-in-out infinite alternate-reverse;
+	mix-blend-mode: overlay;
+	
+}
+
+.dot7 {
+	margin-left: 650px;
+		background-color: #708090;
+		opacity: 1;
+
+	margin-top: -200px;
+	animation: ball 3s ease-in-out infinite alternate-reverse;
+
+	
+}
+
+
+
+
+
+    	
+@keyframes ball{
+	0%{	
+		transform: translateY(0%);
+	}
+
+    
+	100%{transform: translateY(60%);
+		
+	}
+
+}
+
+
+    	
+@keyframes balltravel{
+	0%{	
+		transform: translateY(0px);
+	}
+
+    
+  
+    	
+    	
+
+	
+	100%{transform: translateY(400px);
+		
+	}
+
+}
+
+@keyframes shake{
+	0%{
+
+	}
+    25%{
+    	transform: rotateZ(-30deg);
+
+    }
+    50%{
+
+    }
+    75%{
+    	transform: rotateZ(30deg);
+
+	}
+	100%{
+		background-color: transparent;
+	}
+}
+
+
+
+
+
